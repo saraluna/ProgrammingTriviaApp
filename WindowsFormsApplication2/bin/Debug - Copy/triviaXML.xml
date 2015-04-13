@@ -1,0 +1,1692 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<trivia>
+
+  <triviaquestion subject="csharp">
+
+
+    <question>What is the difference between public, static and void?</question>
+    <answer>All these are access modifiers in C#. Public declared variables or methods are accessible anywhere in the application. Static declared variables or methods are globally accessible without creating an instance of the class. The compiler stores the address of the method as the entry point and uses this information to begin execution before any objects are created. And Void is a type modifier that states that the method or variable does not return any value.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is an object?</question>
+    <answer>An object is an instance of a class through which we access the methods of that class. “New” keyword is used to create an object. A class that creates an object in memory will contain the information about the methods, variables and behavior of that class.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>Define Constructors?</question>
+    <answer> A constructor is a member function in a class that has the same name as its class. The constructor is automatically invoked whenever an object class is created. It constructs the values of data members while initializing the class.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is Jagged Arrays?</question>
+    <answer>The array which has elements of type array is called jagged array. The elements can be of different dimensions and sizes. We can also call jagged array as Array of arrays.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is the difference between ref and out parameters?</question>
+    <answer>An argument passed as ref must be initialized before passing to the method whereas out parameter needs not to be initialized before passing to a method.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is the use of using statement in C#? </question>
+    <answer>The using block is used to obtain a resource and use it and then automatically dispose of when the execution of block completed.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is serialization? </question>
+    <answer>
+      When we want to transport an object through network then we have to convert the object into a stream of bytes. The process of converting an object into a stream of bytes is called Serialization. For an object to be serializable, it should inherit ISerialize Interface.
+      De-serialization is the reverse process of creating an object from a stream of bytes.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question> Can “this” be used within a static method? </question>
+    <answer>We can’t use ‘This’ in a static method because we can only use static variables/methods in a static method.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is difference between constants and read-only?</question>
+    <answer>Constant variables are declared and initialized at compile time. The value can’t be changed after wards. Read-only variables will be initialized only from the Static constructor of the class. Read only is used only when we want to assign the value at run time.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is an interface class? </question>
+    <answer> Interface is an abstract class which has only public abstract methods and the methods only have the declaration and not the definition. These abstract methods must be implemented in the inherited classes.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What are value types and reference types? </question>
+    <answer>
+      Value types are stored in the Stack whereas reference types stored on heap.
+
+      Value types:
+      [csharp] int, enum , byte, decimal, double, float, long[/csharp]
+
+      Reference Types:
+      [csharp] string , class, interface, object.[/csharp]
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What are Custom Control and User Control? </question>
+    <answer>
+      Custom Controls are controls generated as compiled code (Dlls), those are easier to use and can be added to toolbox. Developers can drag and drop controls to their web forms. Attributes can be set at design time. We can easily add custom controls to Multiple Applications (If Shared Dlls), If they are private then we can copy to dll to bin directory of web application and then add reference and can use them.
+
+      User Controls are very much similar to ASP include files, and are easy to create. User controls can’t be placed in the toolbox and dragged – dropped from it. They have their design and code behind. The file extension for user controls is ascx.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What are sealed classes in C#? </question>
+    <answer>We create sealed classes when we want to restrict the class to be inherited. Sealed modifier used to prevent derivation from a class. If we forcefully specify a sealed class as base class then a compile-time error occurs.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is method overloading? </question>
+    <answer>Method overloading is creating multiple methods with the same name with unique signatures in the same class. When we compile, the compiler uses overload resolution to determine the specific method to be invoke.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is the difference between Array and Arraylist? </question>
+    <answer>In an array, we can have items of the same type only. The size of the array is fixed. An arraylist is similar to an array but it doesn’t have a fixed size.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>Why can't a private virtual method be overridden? </question>
+    <answer>because they are not accessible outside the class.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>Describe the accessibility modifier “protected internal”.</question>
+    <answer>Protected Internal variables/methods are accessible within the same assembly and also from the classes that are derived from this parent class.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What are the differences between System.String and System.Text.StringBuilder classes?</question>
+    <answer>
+      System.String is immutable. When we modify the value of a string variable then a new memory is allocated to the new value and the previous memory allocation released. System.StringBuilder was designed to have concept of a mutable string where a variety of operations can be performed without allocation separate memory location for the modified string.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What’s the difference between the System.Array.CopyTo() and System.Array.Clone() ?</question>
+    <answer>Using Clone() method, we creates a new array object containing all the elements in the original array and using CopyTo() method, all the elements of existing array copies into another existing array. Both the methods perform a shallow copy.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>How can we sort the elements of the array in descending order?</question>
+    <answer>Using Sort() methods followed by Reverse() method.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What’s the difference between an interface and abstract class?</question>
+    <answer> Interfaces have all the methods having only declaration but no definition. In an abstract class, we can have some concrete methods. In an interface class, all the methods are public. An abstract class may have private methods.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is the difference between Finalize() and Dispose() methods?</question>
+    <answer>Dispose() is called when we want for an object to release any unmanaged resources with them. On the other hand Finalize() is used for the same purpose but it doesn’t assure the garbage collection of an object.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What are circular references?</question>
+    <answer>Circular reference is situation in which two or more resources are interdependent on each other causes the lock condition and make the resources unusable.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What are generics in C#.NET?</question>
+    <answer> Generics are used to make reusable code classes to decrease the code redundancy, increase type safety and performance. Using generics, we can create collection classes. To create generic collection, System.Collections.Generic namespace should be used instead of classes such as ArrayList in the System.Collections namespace. Generics promotes the usage of parameterized types.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What is an object pool in .NET?</question>
+    <answer>An object pool is a container having objects ready to be used. It tracks the object that is currently in use, total number of objects in the pool. This reduces the overhead of creating and re-creating objects.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>List down the commonly used types of exceptions in .Net?</question>
+    <answer>ArgumentException, ArgumentNullException , ArgumentOutOfRangeException, ArithmeticException, DivideByZeroException ,OverflowException , IndexOutOfRangeException ,InvalidCastException ,InvalidOperationException , IOEndOfStreamException , NullReferenceException , OutOfMemoryException , StackOverflowException etc.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What are Custom Exceptions?</question>
+    <answer>Sometimes there are some errors that need to be handeled as per user requirements. Custom exceptions are used for them and are used defined exceptions.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>What are delegates?</question>
+    <answer>Delegates are same are function pointers in C++ but the only difference is that they are type safe unlike function pointers. Delegates are required because they can be used to write much more generic type safe functions.</answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>How do you inherit a class into other class in C#?</question>
+    <answer>
+      Colon is used as inheritance operator in C#. Just place a colon and then the class name.
+      [csharp] public class DerivedClass : BaseClass[/csharp]
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What is the base class in .net from which all the classes are derived from?
+    </question>
+    <answer>
+      [csharp]System.Object[/csharp]
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What is the difference between method overriding and method overloading?
+    </question>
+    <answer>
+      In method overriding, we change the method definition in the derived class that changes the method behavior.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What are the different ways a method can be overloaded?
+    </question>
+    <answer>
+      Methods can be overloaded using different data types for parameter, different order of parameters, and different number of parameters.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      Why can’t you specify the accessibility modifier for methods inside the interface?
+    </question>
+    <answer>
+      In an interface, we have virtual methods that do not have method definition.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      How can we set class to be inherited, but prevent the method from being over-ridden?
+    </question>
+    <answer>
+      Declare the class as public and make the method sealed to prevent it from being overridden.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What happens if the inherited interfaces have conflicting method names?
+    </question>
+    <answer>
+      Implement is up to you as the method is inside your own class.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What is the difference between a Struct and a Class?
+    </question>
+    <answer>
+      Structs are value-type variables and classes are reference types.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      How to use nullable types in .Net?
+    </question>
+    <answer>
+      Value types can take either their normal values or a null value.
+
+      [csharp]Int? someID = null;
+      If(someID.HasVAlue)
+      {
+      }
+      [/csharp]
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      How we can create an array with non-default values?
+    </question>
+    <answer>
+      We can create an array with non-default values using Enumerable.Repeat.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What is difference between is and as operators in c#?
+    </question>
+    <answer>
+      “is” operator is used to check the compatibility of an object with a given type and it returns the result as Boolean.
+      “as” operator is used for casting of object to a type or a class.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What’s a multicast delegate?
+    </question>
+    <answer>
+      A delegate having multiple handlers assigned to it is called multicast delegate.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What are indexers in C# .NET?
+    </question>
+    <answer>
+      Indexers are known as smart arrays in C#.
+
+      Eg:
+      [csharp]public int this[int index] // Indexer declaration[/csharp]
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What is difference between the “throw” and “throw ex” in .NET?
+    </question>
+    <answer>
+      “Throw” statement preserves original error stack whereas “throw ex” have the stack trace from their throw point.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What are C# attributes and its significance?
+    </question>
+    <answer>
+      C# provides developers a way to define declarative tags on certain entities eg.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      How to implement singleton design pattern in C#?
+    </question>
+    <answer>
+      In singleton pattern, a class can only have one instance and provides access point to it globally.
+      Eg:
+      [csharp]
+      Public sealed class Singleton
+      {
+      Private static readonly Singleton _instance = new Singleton();
+      }
+      [/csharp]
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      What is the difference between directcast and ctype?
+    </question>
+    <answer>
+      DirectCast is used to convert the type of an object that requires the run-time type to be the same as the specified type in DirectCast.
+
+      Ctype is used for conversion where the conversion is defined between the expression and the type.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="csharp">
+    <question>
+      Is C# code is managed or unmanaged code?
+    </question>
+    <answer>
+      C# is managed code because Common language runtime can compile C# code to Intermediate language.
+    </answer>
+
+  </triviaquestion>
+
+  <triviaquestion subject="javascript">
+    <question>
+      What is JavaScript?
+    </question>
+    <answer>
+      JavaScript is a platform-independent,event-driven, interpreted client-side scripting and programming language developed by Netscape Communications Corp. and Sun Microsystems.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How is JavaScript different from Java?
+    </question>
+    <answer>
+      JavaScript was developed by Brendan Eich of Netscape; Java was developed at Sun Microsystems.	While the two languages share some common syntax, they were developed independently of each other and for different audiences.
+
+      Java is a full-fledged programming language tailored for network computing; it includes hundreds of its own objects, including objects for creating user interfaces that appear in Java applets (in Web browsers) or standalone Java applications.	In contrast, JavaScript relies on whatever environment it's operating in for the user interface, such as a Web document's form elements.
+
+      JavaScript was initially called LiveScript at Netscape while it was under development.	A licensing deal between Netscape and Sun at the last minute let Netscape plug the "Java" name into the name of its scripting language.	Programmers use entirely different tools for Java and JavaScript.	.It is also not uncommon for a programmer of one language to be ignorant of the other.	.The two languages don't rely on each other and are intended for different purposes.
+
+      In some ways, the "Java" name on JavaScript has confused the world's understanding of the differences between the two.	On the other hand, JavaScript is much easier to learn than Java and can offer a gentle introduction for newcomers who want to graduate to Java and the kinds of applications you can develop with it.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      What’s relationship between JavaScript and ECMAScript?
+    </question>
+    <answer>
+      ECMAScript is yet another name for JavaScript (other names include LiveScript).	The current JavaScript that you see supported in browsers is ECMAScript revision 3.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How do you submit a form using Javascript?
+    </question>
+    <answer>
+      Use document.forms[0].submit();
+      (0 refers to the index of the form – if you have more than one form in a page, then the first one has the index 0, second has index 1 and so on).
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How do we get JavaScript onto a web page?
+    </question>
+    <answer>
+      You can use several different methods of placing javascript in you pages.
+      You can directly add a script element inside the body of page.
+
+      For example, to add the "last updated line" to your pages, In your page text, add the following:
+      -p-blah, blah, blah, blah, blah.-/p-
+      -script type="text/javascript" -
+      -!-- Hiding from old browsers
+      document.write("Last Updated:" +
+      document.lastModified);
+      document.close();
+      // ---
+      -/script-
+      -p-yada, yada, yada.-/p-
+      (Note: the first comment, "--" hides the content of the script from browsers that don't understand javascript.		.If your audience has much older browsers, you should put this comments inside your javascript.	.If most of your audience has newer browsers, the comments can be omitted.	For brevity, in most examples here the comments are not shown.	)
+      The above code will look like this on Javascript enabled browsers,
+
+      Javascript can be placed inside the -head-
+      element
+      Functions and global variables typically reside inside the -head-
+      element.
+      -head-
+      -title-Default Test Page-/title-
+      -script language="JavaScript" type="text/javascript"-
+      var myVar = "";
+      function timer(){setTimeout('restart()',10);}
+      document.onload=timer();
+      -/script-
+      -/head-
+      Javascript can be referenced from a separate file
+      Javascript may also a placed in a separate file on the server and referenced from an HTML page.	./-).	.These are typically placed in the -head-
+      element.
+      -script type="text/javascript" SRC="myStuff.js"--/script-
+
+
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How to read and write a file using javascript?
+    </question>
+    <answer>
+      I/O operations like reading or writing a file is not possible with client-side javascript.	.However , this can be done by coding a Java applet that reads files for the script.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How to detect the operating system on the client machine?
+    </question>
+    <answer>
+      In order to detect the operating system on the client machine, the navigator.appVersion
+      string (property) should be used.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How can JavaScript make a Web site easier to use? That is, are there certain JavaScript techniques that make it easier for people to use a Web site?
+    </question>
+    <answer>
+      JavaScript's greatest potential gift to a Web site is that scripts can make the page more immediately interactive, that is, interactive without having to submit every little thing to the server for a server program to re-render the page and send it back to the client.	For example, consider a top-level navigation panel that has, say, six primary image map links into subsections of the Web site.	.With only a little bit of scripting, each map area can be instructed to pop up a more detailed list of links to the contents within a subsection whenever the user rolls the cursor atop a map area.	.With the help of that popup list of links, the user with a scriptable browser can bypass one intermediate menu page.	.The user without a scriptable browser (or who has disabled JavaScript) will have to drill down through a more traditional and time-consuming path to the desired content.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How can JavaScript be used to improve the "look and feel" of a Web site? By the same token, how can JavaScript be used to improve the user interface?
+    </question>
+    <answer>
+      On their own, Web pages tend to be lifeless and flat unless you add animated images or more bandwidth-intensive content such as Java applets or other content requiring plug-ins to operate (ShockWave and Flash, for example).
+
+      Embedding JavaScript into an HTML page can bring the page to life in any number of ways.	Perhaps the most visible features built into pages recently with the help of JavaScript are the so-called image rollovers: roll the cursor atop a graphic image and its appearance changes to a highlighted version as a feedback mechanism to let you know precisely what you're about to click on.	But there are less visible yet more powerful enhancements to pages that JavaScript offers.
+
+      Interactive forms validation is an extremely useful application of JavaScript.	While a user is entering data into form fields, scripts can examine the validity of the data--did the user type any letters into a phone number field?, for instance.	Without scripting, the user has to submit the form and let a server program (CGI) check the field entry and then report back to the user.	This is usually done in a batch mode (the entire form at once), and the extra transactions take a lot of time and server processing power.	Interactive validation scripts can check each form field immediately after the user has entered the data, while the information is fresh in the mind.
+
+      Another helpful example is embedding small data collections into a document that scripts can look up without having to do all the server programming for database access.	For instance, a small company could put its entire employee directory on a page that has its own search facility built into the script.	You can cram a lot of text data into scripts no larger than an average image file, so it's not like the user has to wait forever for the data to be downloaded.
+
+      Other examples abound, such as interactive tree-structure tables of contents.		I've even written some multi-screen interactive applications that run entirely on the client, and never talk to the server once everything is downloaded.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      What are JavaScript types?
+    </question>
+    <answer>
+      Number, String, Boolean, Function, Object, Null, Undefined.
+
+
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How do you convert numbers between different bases in JavaScript?
+    </question>
+    <answer>
+      Use the parseInt() function, that takes a string as the first parameter, and the base as a second parameter.	So to convert hexadecimal 3F to decimal, use parseInt ("3F", 16);
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How to create arrays in JavaScript?
+    </question>
+    <answer>
+      We can declare an array like this
+      var scripts = new Array();
+      We can add elements to this array like this
+      scripts[0] = "PHP";
+      scripts[1] = "ASP";
+      scripts[2] = "JavaScript";
+      scripts[3] = "HTML";
+
+      Now our array scrips has 4 elements inside it and we can print or access them by using their index number.	. Note that index number starts from 0.	. To get the third element of the array we have to use the index number 2 .	.Here is the way to get the third element of an array.
+      document.write(scripts[2]);
+      We also can create an array like this
+      var no_array = new Array(21, 22, 23, 24, 25);
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How do you target a specific frame from a hyperlink?
+    </question>
+    <answer>
+      Include the name of the frame in the target attribute of the hyperlink.	<a href="mypage.htm" target="myframe">>My Page</a>
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      What is a fixed-width table and its advantages?
+    </question>
+    <answer>
+      Fixed width tables are rendered by the browser based on the widths of the columns in the first row, resulting in a faster display in case of large tables.	Use the CSS style table-layout:fixed to specify a fixed width table.
+      If the table is not specified to be of fixed width, the browser has to wait till all data is downloaded and then infer the best width for each of the columns.
+      Example of using Regular Expressions for syntax checking in JavaScript
+      ...
+      var re = new RegExp("^(A-Za-z_0-9]{1,}=[A-Za-z_0-9]{1,})*$");
+      var text = myWidget.value;
+      var OK = re.test(text);
+      if( ! OK ) {
+      alert("The extra parameters need some work.\r\n Should be something like: \4\"");
+      }
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      Where are cookies actually stored on the hard disk?
+    </question>
+    <answer>
+      This depends on the user's browser and OS.
+      In the case of Netscape with Windows OS,all the cookies are stored in a single file called
+      cookies.txt
+      c:\Program Files\Netscape\Users\username\cookies.txt
+      In the case of IE,each cookie is stored in a separate file namely username@website.txt.
+      c:\Windows\Cookies\username@Website.txt
+
+
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How to add Buttons in JavaScript?
+    </question>
+    <answer>
+      The most basic and ancient use of buttons are the "submit" and "clear", which appear slightly before the Pleistocene period.	Notice when the "GO!" button is pressed it submits itself to itself and appends the name in the URL.
+
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      What can javascript programs do?
+    </question>
+    <answer>
+      Generation of HTML pages on-the-fly without accessing the Web server.	The user can be given control over the browser like User input validation Simple computations can be performed on the client's machine The user's browser, OS, screen size, etc.	can be detected Date and Time Handling
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How to set a HTML document's background color?
+    </question>
+    <answer>
+      document.bgcolor property can be set to any appropriate color.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      How can JavaScript be used to personalize or tailor a Web site to fit individual users?
+    </question>
+    <answer>
+      JavaScript allows a Web page to perform "if-then" kinds of decisions based on browser version, operating system, user input, and, in more recent browsers, details about the screen size in which the browser is running.	While a server CGI program can make some of those same kinds of decisions, not everyone has access to or the expertise to create CGI programs.
+
+      For example, an experienced CGI programmer can examine information about the browser whenever a request for a page is made; thus a server so equipped might serve up one page for Navigator users and a different page for Internet Explorer users.
+
+      Beyond browser and operating system version, a CGI program can't know more about the environment.	But a JavaScript-enhanced page can instruct the browser to render only certain content based on the browser, operating system, and even the screen size.
+
+      Scripting can even go further if the page author desires.	For example, the author may include a preference screen that lets the user determine the desired background and text color combination.	A script can save this information on the client in a well-regulated local file called a cookie.	The next time the user comes to the site, scripts in its pages look to the cookie info and render the page in the color combination selected previously.	The server is none the wiser, nor does it have to store any visitor-specific information.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="javascript">
+    <question>
+      Are you concerned that older browsers don't support JavaScript and thus exclude a set of Web users? individual users?
+    </question>
+    <answer>
+      Fragmentation of the installed base of browsers will only get worse.	By definition, it can never improve unless absolutely everyone on the planet threw away their old browsers and upgraded to the latest gee-whiz versions.	But even then, there are plenty of discrepancies between the scriptability of the latest Netscape Navigator and Microsoft Internet Explorer.
+
+      The situation makes scripting a challenge, especially for newcomers who may not be aware of the limitations of earlier browsers.	A lot of effort in my books and ancillary material goes toward helping scripters know what features work in which browsers and how to either workaround limitations in earlier browsers or raise the compatibility common denominator.
+      Designing scripts for a Web site requires making some hard decisions about if, when, and how to implement the advantages scripting offers a page to your audience.	For public Web sites, I recommend using scripting in an additive way: let sufficient content stand on its own, but let scriptable browser users receive an enhanced experience, preferably with the same HTML document.
+    </answer>
+  </triviaquestion>
+
+
+  <triviaquestion subject="sql">
+    <question>What is DBMS?</question>
+    <answer>
+      A Database Management System (DBMS) is a program that controls creation, maintenance and use of a database. DBMS can be termed as File Manager that manages data in a database rather than saving it in file systems.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="sql">
+    <question>What is RDBMS?</question>
+    <answer>
+      RDBMS stands for Relational Database Management System. RDBMS store the data into the collection of tables, which is related by common fields between the columns of the table. It also provides relational operators to manipulate the data stored into the tables.
+      Example: SQL Server.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="sql">
+    <question>What is SQL?</question>
+    <answer>
+      SQL stands for Structured Query Language , and it is used to communicate with the Database. This is a standard language used to perform tasks such as retrieval, updation, insertion and deletion of data from a database.
+      Standard SQL Commands are "Select", "Insert", "Update", "Delete", "Create", and "Drop" .
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="sql">
+    <question>What is a Database?</question>
+    <answer>
+      Database is nothing but an organized form of data for easy access, storing, retrieval and managing of data. This is also known as structured form of data which can be accessed in many ways.
+      Example: School Management Database, Bank Management Database.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="sql">
+    <question>What are tables and Fields?</question>
+    <answer>
+      A table is a set of data that are organized in a model with Columns and Rows. Columns can be categorized as vertical, and Rows are horizontal. A table has specified number of column called fields but can have any number of rows which is called record.
+      Example:.
+      Table: Employee.
+      Field: Emp ID, Emp Name, Date of Birth.
+      Data: 201456, David, 11/15/1960.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="sql">
+    <question>What is a primary key?</question>
+    <answer>
+      A primary key is a combination of fields which uniquely specify a row. This is a special kind of unique key, and it has implicit NOT NULL constraint. It means, Primary key values cannot be NULL.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="sql">
+    <question>What is a unique key?</question>
+    <answer>
+      A Unique key constraint uniquely identified each record in the database. This provides uniqueness for the column or set of columns.
+      A Primary key constraint has automatic unique constraint defined on it. But not, in the case of Unique Key.
+      There can be many unique constraint defined per table, but only one Primary key constraint defined per table.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="sql">
+    <question>What is a foreign key?</question>
+    <answer>
+      A foreign key is one table which can be related to the primary key of another table. Relationship needs to be created between two tables by referencing foreign key with the primary key of another table.
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="sql">
+    <question>What is a join?</question>
+    <answer>
+      This is a keyword used to query data from more tables based on the relationship between the fields of the tables. Keys play a major role when JOINs are used.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>What is jQuery?</question>
+    <answer>jQuery is fast, lightweight and feature-rich client side JavaScript Library/Framework which helps in to traverse HTML DOM, make animations, add Ajax interaction, manipulate the page content, change the style and provide cool UI effect. It is one of the most popular client side library and as per a survey it runs on every second website.</answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Why do we use jQuery?
+    </question>
+    <answer>
+      Due to following advantages.
+      Easy to use and learn.
+      Easily expandable.
+      Cross-browser support (IE 6.0+, FF 1.5+, Safari 2.0+, Opera 9.0+)
+      Easy to use for DOM manipulation and traversal.
+      Large pool of built in methods.
+      AJAX Capabilities.
+      Methods for changing or applying CSS, creating animations.
+      Event detection and handling.
+      Tons of plug-ins for all kind of needs.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How JavaScript and jQuery are different?
+    </question>
+    <answer>
+      JavaScript is a language While jQuery is a library built in the JavaScript language that helps to use the JavaScript language.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Is jQuery replacement of Java Script?
+    </question>
+    <answer>
+      No. jQuery is not a replacement of JavaScript. jQuery is a different library which is written on top of JavaScript. jQuery is a lightweight JavaScript library that emphasizes interaction between JavaScript and HTML.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Is jQuery a library for client scripting or server scripting?
+    </question>
+    <answer>
+      Client side scripting.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Does jQuery follow W3C recommendations?
+    </question>
+    <answer>
+      No.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the basic need to start with jQuery?
+    </question>
+    <answer>
+      To start with jQuery, one need to make reference of it&apos;s library. The latest version of jQuery can be downloaded from jQuery.com.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Which is the starting point of code execution in jQuery?
+    </question>
+    <answer>
+      The starting point of jQuery code execution is $(document).ready() function which is executed when DOM is loaded.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What does dollar sign ($) means in jQuery?
+    </question>
+    <answer>
+      Dollar Sign is nothing but it&apos;s an alias for JQuery. Take a look at below jQuery code.
+      1
+      $(document).ready(function(){
+      2
+      });
+      Over here $ sign can be replaced with &quot;jQuery&quot; keyword.
+      1
+      jQuery(document).ready(function(){
+      2
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Can we have multiple document.ready() function on the same page?
+    </question>
+    <answer>
+      YES. We can have any number of document.ready() function on the same page.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Can we use our own specific character in the place of $ sign in jQuery?
+    </question>
+    <answer>
+      Yes. It is possible using jQuery.noConflict().
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Is it possible to use other client side libraries like MooTools, Prototype along with jQuery?
+    </question>
+    <answer>
+      Yes.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is jQuery.noConflict?
+    </question>
+    <answer>
+      As other client side libraries like MooTools, Prototype can be used with jQuery and they also use $() as their global function and to define variables. This situation creates conflict as $() is used by jQuery and other library as their global function. To overcome from such situations, jQuery has introduced jQuery.noConflict().
+      1
+      jQuery.noConflict();
+      2
+      // Use jQuery via jQuery(...)
+      3
+      jQuery(document).ready(function(){
+      4
+      jQuery(&quot;div&quot;).hide();
+      5
+      });
+      You can also use your own specific character in the place of $ sign in jQuery.
+      1
+      var $j = jQuery.noConflict();
+      2
+      // Use jQuery via jQuery(...)
+      3
+      $j(document).ready(function(){
+      4
+      $j(&quot;div&quot;).hide();
+      5
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Is there any difference between body onload() and document.ready() function?
+    </question>
+    <answer>
+      document.ready() function is different from body onload() function for 2 reasons.
+      We can have more than one document.ready() function in a page where we can have only one body onload function.
+      document.ready() function is called as soon as DOM is loaded where body.onload() function is called when everything gets loaded on the page that includes DOM, images and all associated resources of the page.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between .js and .min.js?
+    </question>
+    <answer>
+      jQuery library comes in 2 different versions Production and Deployment. The deployment version is also known as minified version. So .min.js is basically the minified version of jQuery library file. Both the files are same as far as functionality is concerned. but .min.js is quite small in size so it loads quickly and saves bandwidth.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Why there are two different version of jQuery library?
+    </question>
+    <answer>
+      jQuery library comes in 2 different versions.
+      Production
+      Deployment
+      The production version is quite useful at development time as jQuery is open source and if you want to change something then you can make those changes in production version. But the deployment version is minified version or compressed version so it is impossible to make changes in it. Because it is compressed, so its size is very less than the production version which affects the page load time.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is a CDN?
+    </question>
+    <answer>
+      A content delivery network or content distribution network (CDN) is a large distributed system of servers deployed in multiple data centers across the Internet. The goal of a CDN is to serve content to end-users with high availability and high performance.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Which are the popular jQuery CDN? and what is the advantage of using CDN?
+    </question>
+    <answer>
+      There are 3 popular jQuery CDNs.
+      1. Google.
+      2. Microsoft
+      3. jQuery.
+      Advantage of using CDN.
+      It reduces the load from your server.
+      It saves bandwidth. jQuery framework will load faster from these CDN.
+      The most important benefit is it will be cached, if the user has visited any site which is using jQuery framework from any of these CDN
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How to load jQuery from CDN?
+    </question>
+    <answer>
+      Below is the code to load jQuery from all 3 CDNs.
+      Code to load jQuery Framework from Google CDN
+      1
+      &amp;lt;script type=&quot;text/javascript&quot;
+      2
+      src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&amp;gt;
+      3
+      &amp;lt;/script&amp;gt;
+      Code to load jQuery Framework from Microsoft CDN
+      1
+      &amp;lt;script type=&quot;text/javascript&quot;
+      2
+      src=&quot;http://ajax.microsoft.com/ajax/jquery/jquery-1.9.1.min.js&quot;&amp;gt;
+      3
+      &amp;lt;/script&amp;gt;
+      Code to load jQuery Framework from jQuery Site(EdgeCast CDN)
+      1
+      &amp;lt;script type=&quot;text/javascript&quot;
+      2
+      src=&quot;http://code.jquery.com/jquery-1.9.1.min.js&quot;&amp;gt;
+      3
+      &amp;lt;/script&amp;gt;
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How to load jQuery locally when CDN fails?
+    </question>
+    <answer>
+      It is a good approach to always use CDN but sometimes what if the CDN is down (rare possibility though) but you never know in this world as anything can happen.
+
+      Below given jQuery code checks whether jQuery is loaded from Google CDN or not, if not then it references the jQuery.js file from your folder.
+      1
+      &amp;lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+      2
+      &amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+      3
+      if (typeof jQuery == &apos;undefined&apos;)
+      4
+      {
+      5
+      document.write(unescape(&quot;%3Cscript src=&apos;Scripts/jquery.1.9.1.min.js&apos; type=&apos;text/javascript&apos;%3E%3C/script%3E&quot;));
+      6
+      }
+      7
+      &amp;lt;/script&amp;gt;
+      It first loads the jQuery from Google CDN and then check the jQuery object. If jQuery is not loaded successfully then it will references the jQuery.js file from hard drive location. In this example, the jQuery.js is loaded from Scripts folder.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What are selectors in jQuery and how many types of selectors are there?
+    </question>
+    <answer>
+      To work with an element on the web page, first we need to find them. To find the html element in jQuery we use selectors. There are many types of selectors but basic selectors are:
+
+      Name: Selects all elements which match with the given element Name.
+      #ID: Selects a single element which matches with the given ID
+      .Class: Selects all elements which match with the given Class.
+      Universal (*): Selects all elements available in a DOM.
+      Multiple Elements E, F, G: Selects the combined results of all the specified selectors E, F or G.
+      Attribute Selector: Select elements based on its attribute value.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How do you select element by ID in jQuery?
+    </question>
+    <answer>
+      To select element use ID selector. We need to prefix the id with &quot;#&quot; (hash symbol). For example, to select element with ID &quot;txtName&quot;, then syntax would be,
+      1
+      $(&apos;#txtName&apos;)
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What does $(&quot;div&quot;) will select?
+    </question>
+    <answer>
+      This will select all the div elements on page.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How to select element having a particular class (&quot;.selected&quot;)?
+    </question>
+    <answer>
+      $(&apos;.selected&apos;). This selector is known as class selector. We need to prefix the class name with &quot;.&quot; (dot).
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What does $(&quot;div.parent&quot;) will select?
+    </question>
+    <answer>
+      All the div element with parent class.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What are the fastest selectors in jQuery?
+    </question>
+    <answer>
+      ID and element selectors are the fastest selectors in jQuery.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What are the slow selectors in jQuery?
+    </question>
+    <answer>
+      class selectors are the slow compare to ID and element.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How jQuery selectors are executed?
+    </question>
+    <answer>
+      Your last selectors is always executed first. For example, in below jQuery code, jQuery will first find all the elements with class &quot;.myCssClass&quot; and after that it will reject all the other elements which are not in &quot;p#elmID&quot;.
+      1
+      $(&quot;p#elmID .myCssClass&quot;);
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Which is fast document.getElementByID(&apos;txtName&apos;) or $(&apos;#txtName&apos;).?
+    </question>
+    <answer>
+      Native JavaScipt is always fast. jQuery method to select txtName &quot;$(&apos;#txtName&apos;)&quot; will internally makes a call to document.getElementByID(&apos;txtName&apos;). As jQuery is written on top of JavaScript and it internally uses JavaScript only So JavaScript is always fast.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Difference between $(this) and &apos;this&apos; in jQuery?
+    </question>
+    <answer>
+      this and $(this) refers to the same element. The only difference is the way they are used. &apos;this&apos; is used in traditional sense, when &apos;this&apos; is wrapped in $() then it becomes a jQuery object and you are able to use the power of jQuery.
+      1
+      $(document).ready(function(){
+      2
+      $(&apos;#spnValue&apos;).mouseover(function(){
+      3
+      alert($(this).text());
+      4
+      });
+      5
+      });
+      In below example, this is an object but since it is not wrapped in $(), we can&apos;t use jQuery method and use the native JavaScript to get the value of span element.
+      1
+      $(document).ready(function(){
+      2
+      $(&apos;#spnValue&apos;).mouseover(function(){
+      3
+      alert(this.innerText);
+      4
+      });
+      5
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How do you check if an element is empty?
+    </question>
+    <answer>
+      There are 2 ways to check if element is empty or not. We can check using &quot;:empty&quot; selector.
+      1
+      $(document).ready(function(){
+      2
+      if ($(&apos;#element&apos;).is(&apos;:empty&apos;)){
+      3
+      //Element is empty
+      4
+      }
+      5
+      });
+      And the second way is using the &quot;$.trim()&quot; method.
+      1
+      $(document).ready(function(){
+      2
+      if($.trim($(&apos;#element&apos;).html())==&apos;&apos;) {
+      3
+      //Element is empty
+      4
+      }
+      5
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How do you check if an element exists or not in jQuery?
+    </question>
+    <answer>
+      Using jQuery length property, we can ensure whether element exists or not.
+      1
+      $(document).ready(function(){
+      2
+      if ($(&apos;#element&apos;).length &amp;gt; 0){
+      3
+      //Element exists
+      4
+      });
+      5
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the use of jquery .each() function?
+    </question>
+    <answer>
+      The $.each() function is used to iterate over a jQuery object. The $.each() function can be used to iterate over any collection, whether it is an object or an array.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between jquery.size() and jquery.length?
+    </question>
+    <answer>
+      jQuery .size() method returns number of element in the object. But it is not preferred to use the size() method as jQuery provide .length property and which does the same thing. But the .length property is preferred because it does not have the overhead of a function call.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between $(&apos;div&apos;) and $(&apos;&amp;lt;div/&amp;gt;&apos;) in jQuery?
+    </question>
+    <answer>
+      $(&apos;&amp;lt;div/&amp;gt;&apos;) : This creates a new div element. However this is not added to DOM tree unless you don&apos;t append it to any DOM element.
+
+      $(&apos;div&apos;) : This selects all the div element present on the page.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between parent() and parents() methods in jQuery?
+    </question>
+    <answer>
+      The basic difference is the parent() function travels only one level in the DOM tree, where parents() function search through the whole DOM tree.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between eq() and get() methods in jQuery?
+    </question>
+    <answer>
+      eq() returns the element as a jQuery object. This method constructs a new jQuery object from one element within that set and returns it. That means that you can use jQuery functions on it.
+
+      get() return a DOM element. The method retrieve the DOM elements matched by the jQuery object. But as it is a DOM element and it is not a jQuery-wrapped object. So jQuery functions can&apos;t be used. Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How do you implement animation functionality?
+    </question>
+    <answer>
+      The .animate() method allows us to create animation effects on any numeric CSS property. This method changes an element from one state to another with CSS styles. The CSS property value is changed gradually, to create an animated effect.
+
+      Syntax is:
+      1
+      (selector).animate({styles},speed,easing,callback)
+      styles: Specifies one or more CSS properties/values to animate.
+      duration: Optional. Specifies the speed of the animation.
+      easing: Optional. Specifies the speed of the element in different points of the animation. Default value is &quot;swing&quot;.
+      callback: Optional. A function to be executed after the animation completes.
+      Simple use of animate function is,
+      1
+      $(&quot;btnClick&quot;).click(function(){
+      2
+      $(&quot;#dvBox&quot;).animate({height:&quot;100px&quot;});
+      3
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How to disable jQuery animation?
+    </question>
+    <answer>
+      Using jQuery property &quot;jQuery.fx.off&quot;, which when set to true, disables all the jQuery animation. When this is done, all animation methods will immediately set elements to their final state when called, rather than displaying an effect.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How do you stop the currently-running animation?
+    </question>
+    <answer>
+      Using jQuery &quot;.stop()&quot; method.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between .empty(), .remove() and .detach() methods in jQuery?
+    </question>
+    <answer>
+      All these methods .empty(), .remove() and .detach() are used for removing elements from DOM but they all are different.
+
+      .empty(): This method removes all the child element of the matched element where remove() method removes set of matched elements from DOM.
+
+      .remove(): Use .remove() when you want to remove the element itself, as well as everything inside it. In addition to the elements themselves, all bound events and jQuery data associated with the elements are removed.
+
+      .detach(): This method is the same as .remove(), except that .detach() keeps all jQuery data associated with the removed elements. This method is useful when removed elements are to be reinserted into the DOM at a later time.
+
+      Find out more here
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Explain .bind() vs .live() vs .delegate() vs .on()
+    </question>
+    <answer>
+      All these 4 jQuery methods are used for attaching events to selectors or elements. But they all are different from each other.
+
+      .bind(): This is the easiest and quick method to bind events. But the issue with bind() is that it doesn&apos;t work for elements added dynamically that matches the same selector. bind() only attach events to the current elements not future element. Above that it also has performance issues when dealing with a large selection.
+
+      .live(): This method overcomes the disadvantage of bind(). It works for dynamically added elements or future elements. Because of its poor performance on large pages, this method is deprecated as of jQuery 1.7 and you should stop using it. Chaining is not properly supported using this method.
+
+      .delegate(): The .delegate() method behaves in a similar fashion to the .live() method, but instead of attaching the selector/event information to the document, you can choose where it is anchored and it also supports chaining.
+
+      .on(): Since live was deprecated with 1.7, so new method was introduced named &quot;.on()&quot;. This method provides all the goodness of previous 3 methods and it brings uniformity for attaching event handlers.
+
+      Find out more here
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+       What is wrong with this code line &quot;$(&apos;#myid.3&apos;).text(&apos;blah blah!!!&apos;);&quot;
+    </question>
+    <answer>
+      The problem with above statement is that the selectors is having meta characters and to use any of the meta-characters ( such as !&quot;#$%&amp;&apos;()*+,./:;&amp;lt;=&amp;gt;?@[\]^`{|}~ ) as a literal part of a name, it must be escaped with with two backslashes: \\. For example, an element with id=&quot;foo.bar&quot;, can use the selector $(&quot;#foo\\.bar&quot;).
+      So the correct syntax is,
+      1
+      $(&apos;#myid\\.3&apos;).text(&apos;blah blah!!!&apos;);
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+       How to create clone of any object using jQuery?
+    </question>
+    <answer>
+      jQuery provides clone() method which performs a deep copy of the set of matched elements, meaning that it copies the matched elements as well as all of their descendant elements and text nodes.
+      1
+      $(document).ready(function(){
+      2
+      $(&apos;#btnClone&apos;).click(function(){
+      3
+      $(&apos;#dvText&apos;).clone().appendTo(&apos;body&apos;);
+      4
+      return false;
+      5
+      });
+      6
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Does events are also copied when you clone any element in jQuery?
+    </question>
+    <answer>
+      As explained in previous question, using clone() method, we can create clone of any element but the default implementation of the clone() method doesn&apos;t copy events unless you tell the clone() method to copy the events. The clone() method takes a parameter, if you pass true then it will copy the events as well.
+      1
+      $(document).ready(function(){
+      2
+      $(&quot;#btnClone&quot;).bind(&apos;click&apos;, function(){
+      3
+      $(&apos;#dvClickme&apos;).clone(true).appendTo(&apos;body&apos;);
+      4
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      ​What is difference between prop and attr?
+    </question>
+    <answer>
+      attr(): Get the value of an attribute for the first element in the set of matched elements. Whereas,.prop(): (Introduced in jQuery 1.6) Get the value of a property for the first element in the set of matched elements.
+
+      Attributes carry additional information about an HTML element and come in name=&quot;value&quot; pairs. Where Property is a representation of an attribute in the HTML DOM tree. once the browser parse your HTML code ,corresponding DOM node will be created which is an object thus having properties.
+
+      attr() gives you the value of element as it was defines in the html on page load. It is always recommended to use prop() to get values of elements which is modified via javascript/jquery , as it gives you the original value of an element&apos;s current state. Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is event.PreventDefault?
+    </question>
+    <answer>
+      The event.preventDefault() method stops the default action of an element from happening. For example, Prevents a link from following the URL.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Q48. What is the difference between event.PreventDefault and event.stopPropagation?
+    </question>
+    <answer>
+      event.preventDefault(): Stops the default action of an element from happening.
+      event.stopPropagation(): Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event. For example, if there is a link with a click method attached inside of a DIV or FORM that also has a click method attached, it will prevent the DIV or FORM click method from firing.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between event.PreventDefault and &quot;return false&quot;?
+    </question>
+    <answer>
+      e.preventDefault() will prevent the default event from occurring, e.stopPropagation() will prevent the event from bubbling up and return false will do both.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between event.stopPropagation and event.stopImmediatePropagation?
+    </question>
+    <answer>
+      event.stopPropagation() allows other handlers on the same element to be executed, while event.stopImmediatePropagation() prevents every event from running. For example, see below jQuery code block.
+      1
+      $(&quot;p&quot;).click(function(event){
+      2
+      event.stopImmediatePropagation();
+      3
+      });
+      4
+      $(&quot;p&quot;).click(function(event){
+      5
+      // This function won&apos;t be executed
+      6
+      $(this).css(&quot;background-color&quot;, &quot;#f00&quot;);
+      7
+      });
+      If event.stopPropagation was used in previous example, then the next click event on p element which changes the css will fire, but in case event.stopImmediatePropagation(), the next p click event will not fire.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How to check if number is numeric while using jQuery 1.7+?
+    </question>
+    <answer>
+      Using &quot;isNumeric()&quot; function which was introduced with jQuery 1.7.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How to check data type of any variable in jQuery?
+    </question>
+    <answer>
+      Using $.type(Object) which returns the built-in JavaScript type for the object.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How do you attach a event to element which should be executed only once?
+    </question>
+    <answer>
+      Using jQuery one() method. This attaches a handler to an event for the element. The handler is executed at most once per element. In simple terms, the attached function will be called only once.
+      1
+      $(document).ready(function() {
+      2
+      $(&quot;#btnDummy&quot;).one(&quot;click&quot;, function() {
+      3
+      alert(&quot;This will be displayed only once.&quot;);
+      4
+      });
+      5
+      });​
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Can you include multiple version of jQuery? If yes, then how they are executed?
+    </question>
+    <answer>
+      Yes. Multiple versions of jQuery can be included in same page.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      In what situation you would use multiple version of jQuery and how would you include them?
+    </question>
+    <answer>
+      Well, it is quite possible that the jQuery plugins which are used are dependent on older version but for your own jQuery code, you would like to use newer version. So because of this dependency, multiple version of jQuery may required sometimes on single page.
+
+      Below code shows how to include multiple version of jQuery.
+      1
+      &amp;lt;script type=&apos;text/javascript&apos; src=&apos;js/jquery_1.9.1.min.js&apos;&amp;gt;&amp;lt;/script&amp;gt;
+      2
+
+      3
+      &amp;lt;script type=&apos;text/javascript&apos;&amp;gt;
+      4
+      var $jq = jQuery.noConflict();
+      5
+      &amp;lt;/script&amp;gt;
+      6
+
+      7
+      &amp;lt;script type=&apos;text/javascript&apos; src=&apos;js/jquery_1.7.2.min.js&apos;&amp;gt;&amp;lt;/script&amp;gt;
+      By this way, for your own jQuery code use &quot;$jq&quot;, instead of &quot;$&quot; as &quot;$jq&quot; refers to jQuery 1.9.1, where &quot;$&quot; refers to 1.7.2.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Is it possible to hold or delay document.ready execution for sometime?
+    </question>
+    <answer>
+      Yes, its possible. With Release of jQuery 1.6, a new method &quot;jQuery.holdReady(hold)&quot; was introduced. This method allows to delay the execution of document.ready() event. document.ready() event is called as soon as your DOM is ready but sometimes there is a situation when you want to load additional JavaScript or some plugins which you have referenced.
+      1
+      ​
+      2
+      $.holdReady(true);
+      3
+      $.getScript(&quot;myplugin.js&quot;, function() {
+      4
+      $.holdReady(false);
+      5
+      });
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is chaining in jQuery?
+    </question>
+    <answer>
+      Chaining is one of the most powerful feature of jQuery. In jQuery, Chaining means to connect multiple functions, events on selectors. It makes your code short and easy to manage and it gives better performance. The chain starts from left to right. So left most will be called first and so on.
+      1
+      ​$(document).ready(function(){
+      2
+      $(&apos;#dvContent&apos;).addClass(&apos;dummy&apos;);
+      3
+      $(&apos;#dvContent&apos;).css(&apos;color&apos;, &apos;red&apos;);
+      4
+      $(&apos;#dvContent&apos;).fadeIn(&apos;slow&apos;);
+      5
+      });​
+      The above jQuery code sample can be re-written using chaining. See below.
+      1
+      ​$(document).ready(function(){
+      2
+      $(&apos;#dvContent&apos;).addClass(&apos;dummy&apos;)
+      3
+      .css(&apos;color&apos;, &apos;red&apos;)
+      4
+      .fadeIn(&apos;slow&apos;);
+      5
+      });​
+      Not only functions or methods, chaining also works with events in jQuery.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How does caching helps and how to use caching in jQuery?
+    </question>
+    <answer>
+      Caching is an area which can give you awesome performance, if used properly and at the right place. While using jQuery, you should also think about caching. For example, if you are using any element in jQuery more than one time, then you must cache it. See below code.
+      1
+      $(&quot;#myID&quot;).css(&quot;color&quot;, &quot;red&quot;);
+      2
+      //Doing some other stuff......
+      3
+      $(&quot;#myID&quot;).text(&quot;Error occurred!&quot;);
+      4
+      ​
+      Now in above jQuery code, the element with #myID is used twice but without caching. So both the times jQuery had to traverse through DOM and get the element. But if you have saved this in a variable then you just need to reference the variable. So the better way would be,
+      1
+      var $myElement = $(&quot;#myID&quot;).css(&quot;color&quot;, &quot;red&quot;);
+      2
+      //Doing some other stuff......
+      3
+      $myElement.text(&quot;Error occurred!&quot;);
+      4
+      ​
+      So now in this case, jQuery won&apos;t need to traverse through the whole DOM tree when it is used second time. So in jQuery, Caching is like saving the jQuery selector in a variable. And using the variable reference when required instead of searching through DOM again.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      You get &quot;jquery is not defined&quot; or &quot;$ is not defined&quot; error. What could be the reason?
+    </question>
+    <answer>
+      There could be many reasons for this.
+      You have forgot to include the reference of jQuery library and trying to access jQuery.
+      You have include the reference of the jQuery file, but it is after your jQuery code.
+      The order of the scripts is not correct. For example, if you are using any jQuery plugin and you have placed the reference of the plugin js before the jQuery library then you will face this error.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How to write browser specific code using jQuery?
+    </question>
+    <answer>
+      Using jQuery.browser property, we can write browser specific code. This property contains flags for the useragent, read from navigator.userAgent. This property was removed in jQuery 1.9.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Can we use jQuery to make ajax request?
+    </question>
+    <answer>
+      Yes. jQuery can be used for making ajax request.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What are various methods to make ajax request in jQuery?
+    </question>
+    <answer>
+      Using below jQuery methods, you can make ajax calls.
+      load() : Load a piece of html into a container DOM
+      $.getJSON(): Load JSON with GET method.
+      $.getScript(): Load a JavaScript file.
+      $.get(): Use to make a GET call and play extensively with the response.
+      $.post(): Use to make a POST call and don&apos;t want to load the response to some container DOM.
+      $.ajax(): Use this to do something on XHR failures, or to specify ajax options (e.g. cache: true) on the fly.
+      Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Is there any advantage of using $.ajax() for ajax call against $.get() or $.post()?
+    </question>
+    <answer>
+      By using jQuery post()/ jQuery get(), you always trust the response from the server and you believe it is going to be successful all the time. Well, it is certainly not a good idea to trust the response. As there can be n number of reason which may lead to failure of response.
+
+      Where jQuery.ajax() is jQuery&apos;s low-level AJAX implementation. $.get and $.post are higher-level abstractions that are often easier to understand and use, but don&apos;t offer as much functionality (such as error callbacks). Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What are deferred and promise object in jQuery?
+    </question>
+    <answer>
+      Deferred and promise are part of jQuery since version 1.5 and they help in handling asynchronous functions like Ajax. Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Can we execute/run multiple Ajax request simultaneously in jQuery? If yes, then how?
+    </question>
+    <answer>
+      Yes, it is possible to execute multiple Ajax request simultaneously or in parallel. Instead of waiting for first ajax request to complete and then issue the second request is time consuming. The better approach to speed up things would be to execute multiple ajax request simultaneously.
+
+      Using jQuery .when() method which provides a way to execute callback functions based on one or more objects, usually Deferred objects that represent asynchronous events. Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Can you call C# code-behind method using jQuery? If yes,then how?
+    </question>
+    <answer>
+      Yes. We can call C# code-behind function via $.ajax. But for do that it is compulsory to mark the method as WebMethod.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Which is the latest version of jQuery library?
+    </question>
+    <answer>
+      The latest version (when this post is written) of jQuery is 1.10.2 or 2.0.3. jQuery 2.x has the same API as jQuery 1.x, but does not support Internet Explorer 6, 7, or 8.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Does jQuery 2.0 supports IE?
+    </question>
+    <answer>
+      No. jQuery 2.0 has no support for IE 6, IE 7 and IE 8.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What are source maps in jQuery?
+    </question>
+    <answer>
+      In case of jQuery, Source Map is nothing but mapping of minified version of jQuery against the un-minified version. Source map allows to debug minified version of jQuery library. Source map feature was release with jQuery 1.9. Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How to use migrate jQuery plugin?
+    </question>
+    <answer>
+      with release of 1.9 version of jQuery, many deprecated methods were discarded and they are no longer available. But there are many sites in production which are still using these deprecated features and it&apos;s not possible to replace them overnight. So jQuery team provided with jQuery Migrate plugin that makes code written prior to 1.9 work with it.
+
+      So to use old/deprecated features, all you need to do is to provide reference of jQuery Migrate Plugin. Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Is it possible to get value of multiple CSS properties in single statement?
+    </question>
+    <answer>
+      Well, before jQuery 1.9 release it was not possible but one of the new feature of jQuery 1.9 was .css() multi-property getter.
+      1
+      var propCollection = $(&quot;#dvBox&quot;).css([ &quot;width&quot;, &quot;height&quot;, &quot;backgroundColor&quot; ]);
+      In this case, the propCollection will be an array and it will look something like this.
+      1
+      {
+      2
+      width: &quot;100px&quot;,
+      3
+      height: &quot;200px&quot;,
+      4
+      backgroundColor: &quot;#FF00FF&quot;
+      5
+      }
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      How do you stop the currently-running animation, remove all queued animations, and complete all animations for the matched elements?
+    </question>
+    <answer>
+      It can be done via calling .stop([clearQueue ] [, jumpToEnd ]) method and by passing both the parameters as true.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is finish method in jQuery?
+    </question>
+    <answer>
+      The .finish() method stops all queued animations and places the element(s) in their final state. This method was introduced in jQuery 1.9.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between calling stop(true,true) and finish method?
+    </question>
+    <answer>
+      The .finish() method is similar to .stop(true, true) in that it clears the queue and the current animation jumps to its end value. It differs, however, in that .finish() also causes the CSS property of all queued animations to jump to their end values, as well.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Consider a scenario where things can be done easily with javascript, would you still prefer jQuery?
+    </question>
+    <answer>
+      No. If things can be done easily via CSS or JavaScript then You should not think about jQuery. Remember, jQuery library always comes with xx kilobyte size and there is no point of wasting bandwidth.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      Can we use protocol less URL while referencing jQuery from CDNs?
+    </question>
+    <answer>
+      Yes. Below code is completely valid.
+      1
+      &amp;lt;script type=&apos;text/javascript&apos; src=&apos;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&apos;&amp;gt;&amp;lt;/script&amp;gt;
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the advantage of using protocol less URL while referencing jQuery from CDNs?
+    </question>
+    <answer>
+      It is quite useful when you are moving from HTTP to HTTPS url. You need to make sure that correct protocol is used for referencing jQuery library as pages served via SSL should contain no references to content served through unencrypted connections.
+
+      &quot;protocol-less&quot; URL is the best way to reference third party content that’s available via both HTTP and HTTPS. When a URL’s protocol is omitted, the browser uses the underlying document’s protocol instead. Find out more here.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is jQuery plugin and what is the advantage of using plugin?
+    </question>
+    <answer>
+      A plug-in is piece of code written in a standard JavaScript file. These files provide useful jQuery methods which can be used along with jQuery library methods. jQuery plugins are quite useful as its piece of code which is already written by someone and re-usable, which saves your development time.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is jQuery UI?
+    </question>
+    <answer>
+      jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library that can be used to build interactive web applications.
+
+    </answer>
+  </triviaquestion>
+  <triviaquestion subject="jQuery">
+    <question>
+      What is the difference between jQuery and jQuery UI?
+    </question>
+    <answer>	 jQuery is the core library. jQueryUI is built on top of it. If you use jQueryUI, you must also include jQuery.</answer>
+  </triviaquestion>
+
+</trivia>
+<!--<triviaquestion subject="">
+    <question></question>
+    <answer></answer>
+  </triviaquestion>-->

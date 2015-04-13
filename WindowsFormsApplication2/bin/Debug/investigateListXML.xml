@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<questions>
+  <question>
+    <original>
+      How can JavaScript make a Web site easier to use? That is, are there certain JavaScript techniques that make it easier for people to use a Web site?
+    </original>
+    <toInvestigate>Provide more examples</toInvestigate>
+  </question>
+  <question>
+    <original>
+      Why can’t you specify the accessibility modifier for methods inside the interface?
+    </original>
+    <toInvestigate>View this</toInvestigate>
+  </question>
+  <question>
+    <original>What is an object pool in .NET?</original>
+    <toInvestigate>this one I have never seen before</toInvestigate>
+  </question>
+  <question>
+    <original>What is a foreign key?</original>
+    <toInvestigate>test</toInvestigate>
+  </question>
+  <question>
+    <original>What is an object pool in .NET?</original>
+    <toInvestigate>confused</toInvestigate>
+  </question>
+  <question>
+    <original>
+      What is the difference between directcast and ctype?
+    </original>
+    <toInvestigate>look up</toInvestigate>
+  </question>
+  <question>
+    <original>
+      How to implement singleton design pattern in C#?
+    </original>
+    <toInvestigate>no idea</toInvestigate>
+  </question>
+  <question subject="">
+    <original>C#: 
+      What happens if the inherited interfaces have conflicting method names?
+    </original>
+    <toInvestigate>test</toInvestigate>
+  </question>
+  <question subject="csharp">
+    <original>C#: What is an object?</original>
+    <toInvestigate>rstasfdf</toInvestigate>
+  </question>
+</questions>
